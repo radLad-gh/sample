@@ -1,7 +1,8 @@
-package sample
+package util
 
 import (
 	"fmt"
+
 	"rsc.io/quote"
 )
 
@@ -10,8 +11,8 @@ func About() string {
 	return fmt.Sprintf("This package was build by %v", AUTHOR)
 }
 
-func GetQuote() {
-	fmt.Println(quote.Glass())
+func GetQuote() string {
+	return fmt.Sprintf("%v", quote.Glass())
 }
 
 func Hello(name string) string {
